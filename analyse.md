@@ -7,7 +7,7 @@ home page :
 
 
 about me :
- -there is 3 paragraphes all of them are in the same size
+ -there is 3 paragraphs all of them are in the same size
  -liste of 4 H4 heading 
 
 
