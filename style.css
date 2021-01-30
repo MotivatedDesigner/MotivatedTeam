@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f1f1f1;
+    font-size: 62.5%;
+    line-height: 1.5;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+h1 {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 6em;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 1.6em;
+    margin-bottom: 1.2em;
+}
+
+p{
+    font-weight: 200;
+    margin-bottom: .1em;
+}
+
+main {
+    width: 88%;
+    margin-left: auto;
+}
+
+/************************ HOME SECTION **********************/
+
+.home {
+    background: url(../ressources/accueil.jpg) no-repeat center center/cover;
+    height: 100vh;
+    padding: 6em;
+    padding-top: 16%;
+}
+
+.home-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-acc {
+    text-decoration: none;
+    background: #000;
+    color: #f1f1f1;
+    border-radius: 2px;
+    padding: .6em 1.2em;
+    border: 2px solid black;
+    font-size: 1.2em;
+}
+
+.btn-acc2 {
+    background: transparent;
+    color: black;
+    font-weight: 700;
+}
+
+.medias {
+    display: flex;
+    gap: .6em;
+    margin-top: 3em;
+}
+
+.media {
+    width: 60px;
+    height: 60px;
+    background: #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.icone-medias {
+    width: 30px;
+}
+
+.btn-rond {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 #333;
+    background: #333;
+    animation: pulse 1.3s infinite;
+    margin-top: 10em;
+}
+
+.logo-btn-rond-acc {
+    width: 35px;
+}
+
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.01);
+    }
+}
+
+
+/************************ HOME SECTION **********************/
+
+nav {
+    height: 100vh;
+    width: 12%;
+    background: #333;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6em 0;
+}
+
+nav > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 2.4em;
+}
+
+/* nav > ul li {
+    display: flex;
+    gap: 2em;
+} */
+
+.fa-me{
+    color: white;
+    margin-right: .4em;
+}
+
+.cercle-portrait{
+    width: 100%;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+.logo-cercle{
+    width: 30%;
+}
+
+/************************ ABOUT SECTION **********************/
+
+.about{
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    color: white;
+    align-items: center;
+}
+
+.section-title{
+    padding: 1em 0;
+    font-size: 3em;
+    position: relative;
+}
+/* 
+.section-title::after{
+    position: absolute;
+    background: white;
+    content: '';
+    height: 1px;
+    width: 3em;
+    top: 76px;
+    left: 25px;
+    opacity: .5;
+} */
+
+
+
+.about-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+    width: 80%;
+}
+
+.about-left{
+    width: 35%;
+}
+
+.about-list{
+    list-style: none;
+}
+
+.txt-list{
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.list-number{
+    font-family: Helvetica, sans-serif;
+    font-size: 1.4em;
+    position: relative;
+    z-index: 2;
+}
+
+.list-number::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #694b4b;
+    /* background: #694b4b; */
+    left: -11px;
+    z-index: -1;
+    top: -7px;
+}
+
